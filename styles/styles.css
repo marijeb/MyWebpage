@@ -74,6 +74,8 @@ a {text-decoration: none;}
 
 a:link {color:#777;}
 
+a.btn-text:link {color:whitesmoke;}
+
  /* buttons  */
 .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
@@ -88,7 +90,6 @@ a:link {color:#777;}
 
 .btn-text {
     background-color: #777; 
-    color: whitesmoke;
     font-weight: 600;
     font-size: 0.8em;
     text-decoration: none;
