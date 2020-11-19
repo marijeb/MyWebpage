@@ -316,6 +316,7 @@ body {
 
 .btn-text {
     background-color: #777; 
+    color: whitesmoke;
     font-weight: 600;
     font-size: 0.8em;
     text-decoration: none;
@@ -333,7 +334,8 @@ body {
     font-size: 1em;}
 
 .btn-white {
-    background-color: #f7f7f7;
+    background-color: whitesmoke;
+    color: #777;
     font-weight: 700;}
 
 /* links */
