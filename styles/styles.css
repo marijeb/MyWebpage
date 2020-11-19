@@ -72,7 +72,7 @@ body {
  /* links  */    
 a {text-decoration: none;}
 
-a:link {color: #1e1e21;}
+a:link {color:#777;}
 
  /* buttons  */
 .btn, .btn:link, .btn:visited {
