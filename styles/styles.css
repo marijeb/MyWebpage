@@ -62,12 +62,8 @@ body {
     padding-bottom: 2.5em;}
 
 .btn-grey {
-    background-color: #f7f7f7; 
-    color: black;
+    background-color: #f7f7f7;
     font-weight: 700;}
-
-
-
 
  /* links  */    
 a {text-decoration: none;}
@@ -98,7 +94,7 @@ a.btn-text:link {color:whitesmoke;}
     border-radius: 10em;
     position: relative;
     border: none;
-    cursor: pointer;;
+    cursor: pointer;
     
 }
 
