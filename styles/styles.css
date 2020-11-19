@@ -5,7 +5,7 @@ body {
     color: #777;
     background-color: #f7f7f7;}
     
-/* TOP NAVIGATION BAR */    
+/* Top Navigation Bar */    
 /* Add a color background color to the top navigation */
 .topnav {
     overflow: hidden;}
@@ -26,7 +26,7 @@ body {
     color: white;
     border-radius: 10em;}
 
-/* HEADER */
+/* Header */
 .header {
     background-image: url(../img/brisbane02.jpg);
     background-size: cover;
@@ -61,44 +61,7 @@ body {
     width: 15em;
     padding-bottom: 2.5em;}
 
-.btn-white {
-    background-color: #f7f7f7;
-    font-weight: 700;}
-
- /* links  */    
-a {text-decoration: none;}
-
-a:link {color:#777;}
-
-a.btn-text:link {color:whitesmoke;}
-
- /* buttons  */
-.btn, .btn:link, .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1em 1em;
-    display: inline-block;
-    border-radius: 10em;
-    position: relative;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;}
-
-.btn-text {
-    background-color: #777; 
-    font-weight: 600;
-    font-size: 0.8em;
-    text-decoration: none;
-    padding: 1em 1em;
-    display: inline-block;
-    border-radius: 10em;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    
-}
-
-/* SECTION ABOUT ME */
+/* section About Me */
 
 .heading_secondary {
     font-size: 1.5em;
@@ -130,6 +93,7 @@ a.btn-text:link {color:whitesmoke;}
 
 .section-about {
     padding: 10rem 0;}
+
 /* column profile summary  - two columns side by side */
 
 .column_left {
@@ -162,9 +126,9 @@ a.btn-text:link {color:whitesmoke;}
 .row:after {
   content: "";
   display: table;
-  clear: both;
-}
-/* SECTION PROJECTS */
+  clear: both;}
+
+/* Section Project */
 .section-project {
     padding: 10em 2em;
     margin-top: -5em;}
@@ -211,7 +175,7 @@ a.btn-text:link {color:whitesmoke;}
     font-weight: 800;
     color: whitesmoke;}
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container - set the width and height to whatever you want. */
 .flip-card {
     max-width: 280px;
     height: 23rem;
@@ -256,7 +220,6 @@ a.btn-text:link {color:whitesmoke;}
   transform: rotateY(180deg);
 }
 
-
 /* Clear floats */
 .flip-card-inner::after, .row::after {
   content: "";
@@ -276,19 +239,11 @@ a.btn-text:link {color:whitesmoke;}
   padding-bottom: .5rem;
   border-bottom: 1px solid #ffffff;}
 
-/* GIT Button */
-.btn-git {
-    background-color: black; 
-    color: whitesmoke;
-    font-weight: 600;
-    font-size: 1em;}
-
 .u-margin-top-hug {
     padding-top: 2em;
-    padding-bottom: 5em
-}
+    padding-bottom: 5em}
     
-/* FOOTER  */    
+/* Footer  */    
 .footer {
     background-color: dimgrey;
     color: #f7f7f7;
@@ -345,9 +300,48 @@ a.btn-text:link {color:whitesmoke;}
   clear: both;
 }
 
+/* Buttons and Links  */
+/* buttons */
 
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1em;
+    display: inline-block;
+    border-radius: 10em;
+    position: relative;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;}
 
+.btn-text {
+    background-color: #777; 
+    font-weight: 600;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 1em 1em;
+    display: inline-block;
+    border-radius: 10em;
+    position: relative;
+    border: none;
+    cursor: pointer;}
 
+.btn-git {
+    background-color: black; 
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1em;}
+
+.btn-white {
+    background-color: #f7f7f7;
+    font-weight: 700;}
+
+/* links */
+a {text-decoration: none;}
+
+a:link {color:#777;}
+
+a.btn-text:link {color:whitesmoke;}
 
 
 
