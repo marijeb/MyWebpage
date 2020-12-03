@@ -134,21 +134,12 @@ body {
         right:5%;}
      photo_3 {
         top: 60em;
-        right:65%;}
-
-     .image_gallery :hover {
-          outline: 1.5rem solid #777;
-          transform: scale(1.05) translateY(-0.8rem);
-          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
-          z-index: 20; }
+        right:75%;}
 
     .gallery:hover {
         transform: scale(1.05) translateY(-0.8rem);
         box-shadow: 0 8px 16px 0 rgba((64,68,71));
         z-index: 20;}
-
-.composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.85); }
 
 .row:after {
   content: "";
