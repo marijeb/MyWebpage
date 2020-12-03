@@ -186,18 +186,23 @@ body {
 
 .front_card_title {
     font-weight: 800;
-    color: black;
+    color: #1e3641;
     letter-spacing: 0.5m}
 
-.card_sub_title {
+.front_card_sub_title {
     font-size: 1em;
     font-weight: 800;
-    /*text-transform: uppercase*/;
     letter-spacing: 0.5m;
-    color: ##1e3641;}
+    color: #1e3641;}
+
+.back_card_sub_title {
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.5m;
+    color: whitesmoke;}
 
 .front_card_text {
-    color: ##1e3641;
+    color: #1e3641;
     padding: 12px;}
 
 .back_card_title {
@@ -237,8 +242,8 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: #cbcbcb;
-    color: black;
+    /*background-color: #cbcbcb;*/
+    /*color: black;*/
     background-image: linear-gradient(to right bottom, #cbcbcb, #f4f4f4);
 }
 
