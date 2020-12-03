@@ -213,10 +213,11 @@ body {
 .flip-card {
     max-width: 280px;
     height: 23rem;
-    box-shadow: 0px 1.2vw 4vw -1vw rgba(0, 0, 0, 0.6);
     perspective: 1000px;  /*Remove this if you don't want the 3D effect */
     margin: auto;
-}
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 1s ease;}
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -242,8 +243,6 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    /*background-color: #cbcbcb;*/
-    /*color: black;*/
     background-image: linear-gradient(to right bottom, #cbcbcb, #f4f4f4);
 }
 
