@@ -97,7 +97,7 @@ body {
 /* column profile summary  - two columns side by side */
 
 .column_left {
-    width: 65%;
+    width: 55%;
     float: left;}
 
 .column_right {
@@ -110,18 +110,45 @@ body {
     width: 100%;
     display: block;}}
 
-/* profile pic  */
-.img_profile {
-    float: left;
-    margin-top: 70px;
-    margin-left:140px;
-    width:170px;
-    height:170px;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 50%;}
+/* image gallery  */
 
-.img_profile:hover {
-  box-shadow: 0 8px 16px 0 rgba((64,68,71));}
+.gallery {
+    position: relative;
+    padding-left: 2em;}
+
+.image_gallery {
+    max-width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    box-shadow: 0 0.5em 2em 0 rgba((64,68,71));
+    border-radius: 5%;}
+    
+    .photo_1 {
+        top: -1em;
+        left: 65%;
+        z-index: 5;}
+    .photo_2 {
+        top: 13em;
+        right:5%;}
+     photo_3 {
+        top: 60em;
+        right:65%;}
+
+     .image_gallery :hover {
+          outline: 1.5rem solid #777;
+          transform: scale(1.05) translateY(-0.8rem);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+          z-index: 20; }
+
+    .gallery:hover {
+        transform: scale(1.05) translateY(-0.8rem);
+        box-shadow: 0 8px 16px 0 rgba((64,68,71));
+        z-index: 20;}
+
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.85); }
 
 .row:after {
   content: "";
@@ -159,16 +186,18 @@ body {
 
 .front_card_title {
     font-weight: 800;
-    color: #0d0d0d;}
+    color: black;
+    letter-spacing: 0.5m}
 
 .card_sub_title {
     font-size: 1em;
     font-weight: 800;
-    text-transform: uppercase;
-    color: #F5FFFA;}
+    /*text-transform: uppercase*/;
+    letter-spacing: 0.5m;
+    color: ##1e3641;}
 
 .front_card_text {
-    color: whitesmoke;
+    color: ##1e3641;
     padding: 12px;}
 
 .back_card_title {
@@ -179,7 +208,7 @@ body {
 .flip-card {
     max-width: 280px;
     height: 23rem;
-    border: 1px solid #f1f1f1;
+    box-shadow: 0px 1.2vw 4vw -1vw rgba(0, 0, 0, 0.6);
     perspective: 1000px;  /*Remove this if you don't want the 3D effect */
     margin: auto;
 }
@@ -195,8 +224,8 @@ body {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+    transform: rotateY(180deg);
+    box-shadow: 0px 10vw 9vw -6vw rgba(0, 0, 0, 0.5);}
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -208,9 +237,9 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: #bbb;
+    background-color: #cbcbcb;
     color: black;
-    background-image: linear-gradient(to right bottom, #c5c6c7, #606060);
+    background-image: linear-gradient(to right bottom, #cbcbcb, #f4f4f4);
 }
 
 /* Style the back side */
