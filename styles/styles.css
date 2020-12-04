@@ -2,8 +2,8 @@ body {
     font-family: "Arial", "Helvetica", sans-serif;
     padding-left: 5em;
     padding-right: 5em;
-    color: #777;
-    background-color: #f7f7f7;}
+    color: white /*#777*/;
+    background-color: #1B1B1B /*#f7f7f7*/;}
     
 /* Top Navigation Bar */    
 /* Add a color background color to the top navigation */
@@ -14,7 +14,7 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: #777;
+    color: whitesmoke /*#777*/;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
@@ -22,7 +22,7 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: grey;
+    background-color: #cbcbcb /*grey*/;
     color: white;
     border-radius: 10em;}
 
@@ -31,7 +31,7 @@ body {
     background-image: url(../img/brisbane02.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed;   
     border-radius: 10px 10px 10px 10px;
     clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);}
 
@@ -122,7 +122,7 @@ body {
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem;
-    box-shadow: 0 0.5em 2em 0 rgba((64,68,71));
+    box-shadow: 0 0.5em 2em 0 rgb(203,203,203) /*rgba((64,68,71))*/;
     border-radius: 5%;}
     
     .photo_1 {
@@ -138,7 +138,6 @@ body {
 
     .gallery:hover {
         transform: scale(1.05) translateY(-0.8rem);
-        box-shadow: 0 8px 16px 0 rgba((64,68,71));
         z-index: 20;}
 
 .row:after {
@@ -177,28 +176,28 @@ body {
 
 .front_card_title {
     font-weight: 800;
-    color: #1e3641;
+    color: white /*#1e3641*/;
     letter-spacing: 0.5m}
 
 .front_card_sub_title {
     font-size: 1em;
     font-weight: 800;
     letter-spacing: 0.5m;
-    color: #1e3641;}
+    color: white /*#1e3641*/;}
 
 .back_card_sub_title {
     font-size: 1em;
     font-weight: 800;
     letter-spacing: 0.5m;
-    color: whitesmoke;}
+    color: black /*whitesmoke*/;}
 
 .front_card_text {
-    color: #1e3641;
+    color: white /*#1e3641*/;
     padding: 12px;}
 
 .back_card_title {
     font-weight: 800;
-    color: whitesmoke;}
+    color: black /*whitesmoke*/;}
 
 /* The flip card container - set the width and height to whatever you want. */
 .flip-card {
@@ -222,7 +221,7 @@ body {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-   box-shadow: 0px 10vw 9vw -6vw rgba(0, 0, 0, 0.5);}
+    box-shadow: 0 10vw 10vw -6vw rgb(203,203,203) /*rgba(0, 0, 0, 0.5)*/;}
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -230,17 +229,17 @@ body {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;}
+  backface-visibility: hidden; }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-image: linear-gradient(to right bottom, #cbcbcb, #f4f4f4);
-}
+    /*background-color: #cbcbcb;*/
+background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #dcd5d5, #fff7f7);}
 
 /* Style the back side */
 .flip-card-back {
-  background-color: black;
-  color: whitesmoke;
+  background-color: white/*black*/;
+  color: black /*whitesmoke*/;
   transform: rotateY(180deg);
 }
 
@@ -261,7 +260,7 @@ body {
 .card_details li:not(:last-child) {
   margin-bottom: .5rem;
   padding-bottom: .5rem;
-  border-bottom: 1px solid #ffffff;}
+  border-bottom: 1px solid black /*#ffffff*/;}
 
 .u-margin-top-hug {
     padding-top: 2em;
@@ -269,8 +268,8 @@ body {
     
 /* Footer  */    
 .footer {
-    background-color: dimgrey;
-    color: #f7f7f7;
+    /*background-color: #cbcbcb;*/
+    color: white /*#f7f7f7*/;
     font-size: 0.8em;
     padding-top: 2em;
     padding-right: 5px;
@@ -310,7 +309,7 @@ body {
     }
 
 .footer-link:link, .footer-link:visited {
-    color: #f7f7f7;
+    color: white /*#f7f7f7*/;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -338,9 +337,9 @@ body {
     border: none;
     cursor: pointer;}
 
-.btn-text {
-    background-color: #777; 
-    color: whitesmoke;
+.btn-download {
+    background-color: white /*#777*/; 
+    color:  black /*whitesmoke*/;
     font-weight: 600;
     font-size: 0.8em;
     text-decoration: none;
@@ -352,22 +351,22 @@ body {
     cursor: pointer;}
 
 .btn-git {
-    background-color: black; 
-    color: whitesmoke;
+    background-color: white /*black*/; 
+    color: black /*whitesmoke*/;
     font-weight: 600;
     font-size: 1em;}
 
 .btn-white {
-    background-color: whitesmoke;
-    color: #777;
+    background-color: white/*whitesmoke*/;
+    color: black /*#777*/;
     font-weight: 700;}
 
 /* links */
 a {text-decoration: none;}
 
-a:link {color:#777;}
+a:link {color:white /*#777*/;}
 
-a.btn-text:link {color:whitesmoke;}
+a.btn-download:link {color:white /*whitesmoke*/;}
 
 
 
