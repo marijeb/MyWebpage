@@ -2,8 +2,8 @@ body {
     font-family: "Arial", "Helvetica", sans-serif;
     padding-left: 5em;
     padding-right: 5em;
-    color: white /*#777*/;
-    background-color: #1B1B1B /*#f7f7f7*/;}
+    color: white;
+    background-color: #1B1B1B;}
     
 /* Top Navigation Bar */    
 /* Add a color background color to the top navigation */
@@ -14,7 +14,7 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: whitesmoke /*#777*/;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
@@ -22,13 +22,14 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #cbcbcb /*grey*/;
+    background-color: #cbcbcb;
     color: white;
     border-radius: 10em;}
 
 /* Header */
 .header {
-    background-image: url(../img/brisbane02.jpg);
+    background-image: linear-gradient(rgba(253,248,248, 0),rgba(253,248,248)),
+    url(../img/brisbane02.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;   
@@ -38,7 +39,7 @@ body {
 
 .header_text-box {
     text-align: center;
-    color: #f7f7f7;
+    color: white;
     padding-top: 5em;
     padding-bottom:10em;}
     
@@ -94,7 +95,7 @@ body {
 .section-about {
     padding: 10rem 0;}
 
-/* column profile summary  - two columns side by side */
+/* profile summary  - two columns side by side */
 
 .column_left {
     width: 55%;
@@ -103,12 +104,6 @@ body {
 .column_right {
     width: 35%;
     float: left;}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column_summary {
-    width: 100%;
-    display: block;}}
 
 /* image gallery  */
 
@@ -122,7 +117,7 @@ body {
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem;
-    box-shadow: 0 0.5em 2em 0 rgb(203,203,203) /*rgba((64,68,71))*/;
+    box-shadow: 0 0.5em 2em 0 rgb(203,203,203);
     border-radius: 5%;}
     
     .photo_1 {
@@ -144,6 +139,13 @@ body {
   content: "";
   display: table;
   clear: both;}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column_summary {
+    width: 100%;
+    display: block;}}
+
 
 /* Section Project */
 .section-project {
@@ -176,28 +178,28 @@ body {
 
 .front_card_title {
     font-weight: 800;
-    color: white /*#1e3641*/;
+    color: white;
     letter-spacing: 0.5m}
 
 .front_card_sub_title {
     font-size: 1em;
     font-weight: 800;
     letter-spacing: 0.5m;
-    color: white /*#1e3641*/;}
+    color: white;}
 
 .back_card_sub_title {
     font-size: 1em;
     font-weight: 800;
     letter-spacing: 0.5m;
-    color: black /*whitesmoke*/;}
+    color: black;}
 
 .front_card_text {
-    color: white /*#1e3641*/;
+    color: white;
     padding: 12px;}
 
 .back_card_title {
     font-weight: 800;
-    color: black /*whitesmoke*/;}
+    color: black;}
 
 /* The flip card container - set the width and height to whatever you want. */
 .flip-card {
@@ -221,7 +223,7 @@ body {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    box-shadow: 0 10vw 10vw -6vw rgb(203,203,203) /*rgba(0, 0, 0, 0.5)*/;}
+    box-shadow: 0 10vw 10vw -6vw rgb(203,203,203);}
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -233,14 +235,13 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    /*background-color: #cbcbcb;*/
-background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #dcd5d5, #fff7f7);}
+    background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #dcd5d5, #fff7f7);}
 
 /* Style the back side */
 .flip-card-back {
-  background-color: white/*black*/;
-  color: black /*whitesmoke*/;
-  transform: rotateY(180deg);
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
 }
 
 /* Clear floats */
@@ -268,8 +269,7 @@ background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #d
     
 /* Footer  */    
 .footer {
-    /*background-color: #cbcbcb;*/
-    color: white /*#f7f7f7*/;
+    color: white;
     font-size: 0.8em;
     padding-top: 2em;
     padding-right: 5px;
@@ -281,7 +281,7 @@ background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #d
     border-top; 
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #f7f7f7;
+    border-top-color: white;
     padding-top: 0.8em;}
 
 .footer_copyright {
@@ -309,7 +309,7 @@ background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #d
     }
 
 .footer-link:link, .footer-link:visited {
-    color: white /*#f7f7f7*/;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -338,8 +338,8 @@ background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #d
     cursor: pointer;}
 
 .btn-download {
-    background-color: white /*#777*/; 
-    color:  black /*whitesmoke*/;
+    background-color: white; 
+    color:  black;
     font-weight: 600;
     font-size: 0.8em;
     text-decoration: none;
@@ -351,22 +351,22 @@ background-image: linear-gradient(to right bottom, #7a7777, #9a9595, #bab5b5, #d
     cursor: pointer;}
 
 .btn-git {
-    background-color: white /*black*/; 
-    color: black /*whitesmoke*/;
+    background-color: white; 
+    color: black;
     font-weight: 600;
     font-size: 1em;}
 
 .btn-white {
-    background-color: white/*whitesmoke*/;
-    color: black /*#777*/;
+    background-color: white;
+    color: black;
     font-weight: 700;}
 
 /* links */
 a {text-decoration: none;}
 
-a:link {color:white /*#777*/;}
+a:link {color:white;}
 
-a.btn-download:link {color:white /*whitesmoke*/;}
+a.btn-download:link {color:white;}
 
 
 
