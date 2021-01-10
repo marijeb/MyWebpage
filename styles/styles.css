@@ -129,7 +129,7 @@ body {
         right:5%;}
      photo_3 {
         top: 60em;
-        right:75%;}
+        right:65%;}
 
     .gallery:hover {
         transform: scale(1.05) translateY(-0.8rem);
