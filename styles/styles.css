@@ -121,15 +121,15 @@ body {
     border-radius: 5%;}
     
     .photo_1 {
-        top: -1em;
-        left: 65%;
+        top: -0.5em;
+        left: 56%;
         z-index: 5;}
     .photo_2 {
         top: 13em;
-        right:5%;}
+        right:18%;}
      photo_3 {
-        top: 60em;
-        right:75%;}
+        top: 10em;
+        right:55%;}
 
     .gallery:hover {
         transform: scale(1.05) translateY(-0.8rem);
