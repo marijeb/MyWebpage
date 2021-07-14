@@ -6,5 +6,6 @@
 
 A work in progress as I continue to learn more and more :-).
 
-Next on the to do list:
+Next on the To Do list:
+* improvements
 * mobile friendly
