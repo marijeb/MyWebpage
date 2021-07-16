@@ -105,10 +105,17 @@ body {
     width: 35%;
     float: left;}
 
+/* icon */
+.fas {
+    font-size:48px;
+    color:whitesmoke;
+}
+
 /* image gallery  */
 
 .gallery {
     position: relative;
+    top: 5em;
     padding-left: 2em;}
 
 .image_gallery {
@@ -121,14 +128,14 @@ body {
     border-radius: 5%;}
     
     .photo_1 {
-        top: -0.5em;
-        left: 56%;
+        top: -2em;
+        left: 65%;
         z-index: 5;}
     .photo_2 {
-        top: 13em;
-        right:18%;}
-     photo_3 {
         top: 10em;
+        right:10%;}
+     photo_3 {
+        top: 25em;
         right:55%;}
 
     .gallery:hover {
