@@ -8,7 +8,9 @@ body {
 /* Top Navigation Bar */    
 /* Add a color background color to the top navigation */
 .topnav {
-    overflow: hidden;}
+    overflow: hidden;
+    background-color: #1B1B1B;
+        }
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -22,8 +24,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #cbcbcb;
     color: white;
+    background-color: darkgray;
     border-radius: 10em;}
 
 /* Header */
