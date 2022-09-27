@@ -13,19 +13,44 @@
         <meta property="og:type" content="website">
     
         <title>Brycg - Software Tester</title>
-        <link rel="stylesheet" href="styles/styles.css"/>
+
+<!-- Add stylesheet -->
+<link rel="stylesheet" href="styles/styles.css"/>
     
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    
+<!-- Add fontawesoe kit -->
+<script src="https://kit.fontawesome.com/1887cacc1a.js" crossorigin="anonymous"></script>
+        
+        <script
+            src="javascript/NavMenu.js">
+        </script>
    
 </head>
     
 
 <body>
-<!-- top navigation menu -->
-<div class="topnav" id="myTopnav">
-    <a href="#footer">Contact</a>
-    <a href="#section-projects">Projects</a>
-    <a href="#section-about">About</a>
+    
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+<!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+<!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#section-about"
+           onclick="closeNav()">About</a>
+        <a href="#section-projects"
+           onclick="closeNav()">Projects</a>
+        <a href="#footer"
+           onclick="closeNav()">Contact</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="openbtn">
+    <span onclick="openNav()">&#9776</span>
 </div>
 
 <!-- header -->
@@ -62,7 +87,7 @@
                     <br><br>
                     People like Richard Bradshaw, Angie Jones and Bas Dijkstra are people I follow as they've done great work in improving the view and expectations of test automation. 
                     <br><br> 
-                    As a team player, I work closely with team members to ensure that deliverables are of high quality and that project objectives are achieved within agreed timeframes. I am always happy to assist and will take ownership of problems, actively seeking solutions until an agreed resolution has been achieved.<br><br> I can tell you more about me when we meet for coffee!<i class="fas fa-coffee"></i>
+                    As a team player, I work closely with team members to ensure that deliverables are of high quality and that project objectives are achieved within agreed timeframes. I am always happy to assist and will take ownership of problems, actively seeking solutions until an agreed resolution has been achieved.<br><br> I can tell you more about me when we meet for coffee!  <i class="fa-solid fa-mug-saucer"></i>
                     </p>
                     <a href="https://drive.google.com/file/d/19bZR19zVwSaYcRO2MFvqb5GjemZzf7lh/view?usp=sharing" target="_blank" class="btn-download" >Download My CV</a>
                     
