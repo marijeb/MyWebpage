@@ -3,8 +3,11 @@ body {
     padding-left: 5em;
     padding-right: 5em;
     color: white;
-    background-color: #1B1B1B;}
-    
+    background-color: #1B1B1B;
+    height: "100%";
+    }
+  
+
 /* Full Screen Menu */    
 
 /* The overlay (background) */
@@ -28,6 +31,7 @@ body {
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    
 }
 
 /* The navigation links inside the overlay */
@@ -138,17 +142,28 @@ body {
     margin-bottom: 0.1rem; }
 
 .section-about {
-    padding: 10rem 0;}
+  padding: 10rem 0;
+    }
 
 /* profile summary  - two columns side by side */
 
 .column_left {
-    width: 55%;
-    float: left;}
+    display: inline-block;
+    width: 65%;
+    }
 
 .column_right {
-    width: 35%;
-    float: left;}
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin: -50px 0px 0 0
+    }
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 620px) {
+  .column_summary {
+    width: 100%;
+    display: block;}}
 
 /* icon */
 .fas {
@@ -156,47 +171,10 @@ body {
     color:whitesmoke;
 }
 
-/* image gallery  */
-
-.gallery {
-    position: relative;
-    top: 5em;
-    padding-left: 2em;}
-
-.image_gallery {
-    max-width: 50%;
-    position: absolute;
-    z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 2rem;
-    box-shadow: 0 0.5em 2em 0 rgb(203,203,203);
-    border-radius: 50%;}
-    
-    .photo_1 {
-        top: 1.5em;
-        right: -6%;
-        z-index: 5;}
-    .photo_2 {
-        top: 11.5em;
-        right:30%;}
-     photo_3 {
-        top: 0em;
-        right:5%;}
-
-    .gallery:hover {
-        transform: scale(1.05) translateY(-0.8rem);
-        z-index: 20;}
-
 .row:after {
   content: "";
   display: table;
   clear: both;}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column_summary {
-    width: 100%;
-    display: block;}}
 
 
 /* Section Project */
