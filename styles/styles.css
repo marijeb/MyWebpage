@@ -1,11 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Arial", "Helvetica", sans-serif;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: unset;
     color: white;
     background-color: #1B1B1B;
-    height: "100%";
+    height: 100%;
+    /* width: 84%; */
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        padding-left: 11%;
+        padding-right: 11%;
     }
+}
   
 
 /* Full Screen Menu */    
@@ -111,6 +124,13 @@ body {
     width: 15em;
     padding-bottom: 2.5em;}
 
+@media screen and (max-width: 620px) {
+    .heading-primary_main, 
+    .heading-primary_sub {
+        width: unset;
+    }
+}
+
 /* section About Me */
 
 .heading_secondary {
@@ -147,23 +167,41 @@ body {
 
 /* profile summary  - two columns side by side */
 
+.column_summary {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .column_left {
-    display: inline-block;
     width: 65%;
-    }
+}
 
 .column_right {
-    display: inline-block;
     vertical-align: top;
-    width: 15%;
-    margin: -50px 0px 0 0
-    }
+    margin: -50px 0px 0 0;
+    width: 35%;
+}
+
+.column_right img {
+    width: 100%;
+}
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 620px) {
-  .column_summary {
-    width: 100%;
-    display: block;}}
+    .column_summary {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .column_left {
+        width: 100%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+}
 
 /* icon */
 .fas {
